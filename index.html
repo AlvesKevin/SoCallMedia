@@ -65,21 +65,23 @@
           <p id="paragrapheQuestion">Pour en apprendre plus sur vous et votre projet répondez à ce rapide questionnaire, nous vous recontacterons ensuite pour préciser vos demandes.</p>
         </div>
       </div>
+      <form method="post" action="php/traitementQuestionnaire.php">
       <div id="containerForm">
-        <form id="containerQuestionForm" method="post" action="php/traitementQuestionnaire.php">
-          <div id="textePrenom">Nom Prénom</div>
-          <input id="nomPrenom" type="text" name="nomPrenom" placeholder="Votre nom et prénom">
-          <div id="texteMail">Mail</div>
-          <input id="mail" type="text" name="mail" placeholder="Votre mail">
-          <div id="texteTelephone">Téléphone</div>
-          <input id="telephone" type="text" name="telephone" placeholder="Votre téléphone">
-        </form>
-        <div id="containerProjet">
-          <div id="texteVotreProjet">Votre projet</div>
-          <textarea id="votreProjet" name="votreProjet" rows="15" cols="33" minlength="10" maxlength="30" placeholder="Parler de votre projet"></textarea>
-          <button class="btn" type="submit">Envoyer</button>
-        </div>
+         <div id="containerQuestionForm">
+           <div id="textePrenom">Nom Prénom</div>
+           <input id="nomPrenom" type="text" name="nomPrenom" placeholder="Votre nom et prénom">
+           <div id="texteMail">Mail</div>
+           <input id="mail" type="text" name="mail" placeholder="Votre mail">
+           <div id="texteTelephone">Téléphone</div>
+           <input id="telephone" type="text" name="telephone" placeholder="Votre téléphone">
+         </div>
+          <div id="containerProjet">
+            <div id="texteVotreProjet">Votre projet</div>
+            <textarea id="votreProjet" name="votreProjet" rows="15" cols="33" minlength="10" maxlength="30" placeholder="Parler de votre projet"></textarea>
+            <button class="btn" type="submit">Envoyer</button>
+          </div>
       </div>
+      </form>
       </div>
     </div>
 </body>
