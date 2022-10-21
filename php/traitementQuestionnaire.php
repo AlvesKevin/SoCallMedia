@@ -12,7 +12,7 @@ if(isset($_POST['nomPrenom']) && isset($_POST['mail']) && isset($_POST['telephon
   $telephone = htmlspecialchars($_POST['telephone']);
   $votreProjet = htmlspecialchars($_POST['votreProjet']);
 
-  $insert = $bdd->prepare('INSERT INTO questionnaire(nomPrenom, mail, telephone, votreProjet) VALUES(:nomPrenom, :mail, :telephone, :votreProjet )');
+  $insert = $bdd->prepare('INSERT INTO questionnaire(nomPrenom, mail, telephone, votreProjet) VALUES(:nomPrenom, :mail, :telephone, :votreProjet)');
   $insert->execute(array(
     'nomPrenom' => $nomPrenom,
     'mail' => $mail,

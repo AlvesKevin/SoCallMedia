@@ -643,6 +643,11 @@ footer{
     flex-direction: column;
   }
 
+  #pageContact{
+    margin-top: 100px;
+    background-color: #efefef;
+  }
+
 }
 
 
