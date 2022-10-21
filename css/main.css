@@ -4,6 +4,11 @@ html body{
   font-family: 'Poppins', sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: black;
+}
+
 header{
   display: flex;
 }
@@ -30,6 +35,10 @@ header{
   padding: 10px;
   margin-top: 15px;
   margin-right: 40px;
+}
+
+#numero{
+  font-size: 20px;
 }
 
 .btn:hover{
@@ -359,9 +368,6 @@ footer{
   #pageAccueil{
     flex-direction: row;
   }
-
-
-
 }
 
 @media (max-width: 975px){
@@ -647,7 +653,44 @@ footer{
     margin-top: 100px;
     background-color: #efefef;
   }
+}
+
+@media (max-width: 480px){
+
+  #logoHeader{
+    width: 300px;
+  }
+
+  #pageAccueil{
+    width: 480px;
+  }
+
+  #containerTexteAccueil{
+    width: 80%;
+  }
+
+  #paragrapheAccueil{
+    margin-top: 150px;
+  }
+
+  #paragrapheTelemarketing{
+    width: 200px;
+    font-size: 12px;
+  }
+
+  #paragrapheProspection{
+    width: 200px;
+    font-size: 12px;
+  }
+
+  #paragrapheLeadsManagement{
+    width: 200px;
+    font-size: 12px;
+  }
 
 }
+
+
+
 
 
