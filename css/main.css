@@ -19,7 +19,7 @@ header{
 
 .navBar{
   display: flex;
-  width: 30%;
+  width: 600px;
   height: 25px;
   justify-content: space-between;
   margin: 40px auto;
@@ -145,7 +145,7 @@ header{
 
 #logoProspection{
   margin-left: 20px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 #titreProspection{
@@ -351,6 +351,21 @@ footer{
   font-weight: bold;
 }
 
+@media (max-width: 1085px){
+
+  .navBar{
+    display: none;
+  }
+
+  header .btn{
+    display: none;
+  }
+
+}
+
+
+
+
 @media (max-width: 1199px){
 
   #pageAccueil{
@@ -359,14 +374,19 @@ footer{
 
 }
 
-@media (max-width: 1782px){
+@media (max-width: 1500px){
 
   #backgroundHeader{
-    display: none;
+    width: 800px;
   }
 
   #pageAccueil{
-    flex-direction: row;
+    flex-direction: row-reverse;
+  }
+
+  #pageAccueil{
+    width: 1500px;
+    height: 766px;
   }
 }
 
@@ -381,19 +401,19 @@ footer{
   }
 
   #containerTexteAccueil{
-    width: 100%;
+    width: 80%;
     color: white;
   }
 
   #titreAccueil{
-    width: 90%;
+    width: 430px;
     height: 63px;
     margin-top: 160px;
     margin-left: 30px;
   }
 
   #paragrapheAccueil{
-    width: 90%;
+    width: 400px;
     font-size: 20px;
     margin-top: 120px;
     margin-left: 30px;
@@ -476,7 +496,7 @@ footer{
     width: 60px;
     height: 60px;
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   #titreProspection{
@@ -554,7 +574,7 @@ footer{
 
   #containerForm{
     width: 340px;
-    height: 800px;
+    height: 300px;
     display: flex;
     flex-wrap: wrap;
     box-shadow: none;
@@ -652,6 +672,7 @@ footer{
   #pageContact{
     margin-top: 100px;
     background-color: #efefef;
+    height: 1000px;
   }
 }
 
@@ -667,6 +688,13 @@ footer{
 
   #containerTexteAccueil{
     width: 80%;
+  }
+
+  #titreAccueil{
+    width: 400px;
+    height: 63px;
+    margin-top: 160px;
+    margin-left: 120px;
   }
 
   #paragrapheAccueil{
