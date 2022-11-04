@@ -244,13 +244,11 @@ header{
 #containerForm{
   width: 900px;
   height: 450px;
-  display: flex;
-  flex-direction: row;
   background-color: #ffffff;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
-  justify-content: space-between;
   margin-bottom: 70px;
+  padding: 30px;
 }
 
 #containerForm2{
@@ -377,7 +375,7 @@ footer{
 @media (max-width: 1500px){
 
   #backgroundHeader{
-    width: 800px;
+    width: 880px;
   }
 
   #pageAccueil{
@@ -672,7 +670,7 @@ footer{
   #pageContact{
     margin-top: 100px;
     background-color: #efefef;
-    height: 1000px;
+    height: 1300px;
   }
 }
 
