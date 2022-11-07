@@ -4,6 +4,12 @@ html body{
   font-family: 'Poppins', sans-serif;
 }
 
+#copyright{
+  margin: 10px auto;
+  width: 400px;
+  color: black;
+}
+
 a{
   text-decoration: none;
   color: black;
@@ -341,6 +347,7 @@ footer{
   height: 32px;
   margin-top: 10px;
   margin-right: 40px;
+  margin-left: 100px;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -655,6 +662,7 @@ footer{
     margin-right: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: 0;
   }
 
   footer{
@@ -722,7 +730,6 @@ footer{
     font-size: 12px;
     margin-top: 110px;
   }
-
 }
 
 

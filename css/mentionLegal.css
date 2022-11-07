@@ -1,0 +1,56 @@
+html body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    display: flex;
+}
+
+#logoHeader{
+    margin: 30px;
+}
+
+.navBar{
+    display: flex;
+    width: 600px;
+    height: 25px;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.btn{
+    width: 150px;
+    height: 45px;
+    background-color: white;
+    border-radius: 50px;
+    border: 2px solid #000000;
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+    margin-right: 40px;
+}
+
+#numero{
+    font-size: 20px;
+}
+
+.btn:hover{
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+.texte{
+    width: 90%;
+    margin: 100px auto;
+}
+
+h1{
+    color: #6082fe;
+}
