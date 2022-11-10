@@ -2,6 +2,7 @@ html body{
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  background-image: url("/img/background.png");
 }
 
 #copyright{
@@ -17,12 +18,14 @@ a{
 
 header{
   display: flex;
+  justify-content: space-between;
 }
 
 #logoHeader{
   width: 400px;
   height: 100px;
-  margin: 15px;
+  margin-top: 15px;
+  margin-left: 100px;
 }
 
 .navBar{
@@ -46,7 +49,11 @@ header{
 }
 
 #numero{
-  font-size: 20px;
+  width: 300px;
+  height: 60px;
+  font-size: 40px;
+  margin-top: 45px;
+  margin-right: 300px;
 }
 
 .btn:hover{
@@ -56,15 +63,18 @@ header{
 
 #pageAccueil{
   width: 100%;
-  height: 766px;
-  background-color: #000000;
+  height: 820px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  color: black;
+  justify-content: space-between;
 }
 
 #containerTexteAccueil{
-  width: 50%;
-  color: white;
+  width: 650px;
+  height: 650px;
+  margin-left: 200px;
 }
 
 #titreAccueil{
@@ -86,7 +96,7 @@ header{
 }
 
 #containerTexteAccueil .btn{
-  margin-left: 500px;
+  margin-left: 120px;
   margin-top: 100px;
   color: #000000;
 }
@@ -99,13 +109,14 @@ header{
 #titreNosOffres{
   font-size: 40px;
   font-weight: bolder;
-  margin-top: 40px;
-  margin-left: 100px;
+  margin: 100px auto;
+  width: 210px;
 }
 
 #paragrapheNosOffres{
-  margin-left: 100px;
+  margin: 0 auto;
   font-size: 20px;
+  width: 440px;
 }
 
 #containerNosOffres{
@@ -250,13 +261,15 @@ header{
 }
 
 #containerForm{
-  width: 900px;
-  height: 450px;
+  width: 400px;
+  height: 650px;
   background-color: #ffffff;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 50px;
   margin-bottom: 70px;
   padding: 30px;
+  margin-top: 100px;
+  margin-right: 200px;
 }
 
 #containerForm2{
@@ -358,11 +371,44 @@ footer{
   font-weight: bold;
 }
 
-@media (max-width: 1870px){
+#aPropos{
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-  #containerForm{
-    width: 100%;
+#containerAPropos{
+  width: 500px;
+  font-size: 20px;
+  margin-left: 250px;
+  margin-bottom: 100px;
+}
+
+#titreAPropos{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#paragrapheAPropos{
+  margin-top: 20px;
+}
+
+#carte{
+  margin-right: 250px;
+  margin-left: 250px;
+}
+
+@media (max-width: 1109px){
+
+  #pageAccueil{
+    height: 1500px;
   }
+}
+
+
+@media (max-width: 1870px){
 
   #containerContact{
     width: 100%;
@@ -402,34 +448,37 @@ footer{
 
 }
 
+@media (max-width: 1505px){
 
-
-
-@media (max-width: 1199px){
-
-  #pageAccueil{
-    flex-direction: row-reverse;
+  #logoHeader{
+    margin: 0 auto;
   }
 
-}
-
-@media (max-width: 1500px){
-
-  #backgroundHeader{
-    width: 880px;
+  #numero{
+    display: none;
   }
 
-  #pageAccueil{
-    flex-direction: row-reverse;
+  #containerTexteAccueil{
+    margin: 0 auto;
   }
 
-  #pageAccueil{
-    width: 1500px;
-    height: 766px;
+  #containerForm{
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 975px){
+
+  #containerForm{
+    width: 100%;
+    height: 650px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    margin-bottom: 70px;
+    padding: 30px;
+    margin: 100px auto;
+  }
 
   .navBar{
     display: none;
@@ -440,8 +489,8 @@ footer{
   }
 
   #containerTexteAccueil{
-    width: 80%;
-    color: white;
+    width: 500px;
+    color: #000000;
   }
 
   #titreAccueil{
@@ -611,16 +660,6 @@ footer{
     font-size: 18px;
   }
 
-  #containerForm{
-    width: 340px;
-    height: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: none;
-    margin-bottom: 70px;
-    background-color: #efefef;
-  }
-
   #containerQuestionForm{
     width: 200px;
     margin-top: 50px;
@@ -684,7 +723,7 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 50px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0);
     margin-left: 50px;
   }
 
@@ -714,20 +753,57 @@ footer{
     background-color: #efefef;
     height: 1300px;
   }
+
+  #aPropos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px auto;
+    text-align: center;
+  }
+
+  #containerAPropos{
+    width: 100%;
+    font-size: 20px;
+    margin-left: 0;
+    margin-bottom: 100px;
+  }
+
+  #titreAPropos{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #paragrapheAPropos{
+    margin-top: 20px;
+  }
+
+  #carte{
+    width: 100%;
+    margin-right: 250px;
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 480px){
 
-  #logoHeader{
+  #containerForm{
     width: 300px;
+    height: 670px;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    padding: 30px;
+    margin: 100px auto;
+  }
+
+  #logoHeader{
+    width: 100%;
   }
 
   #backgroundHeader{
     display: none;
-  }
-
-  #pageAccueil{
-    width: 480px;
   }
 
   #containerTexteAccueil{
@@ -763,6 +839,45 @@ footer{
     width: 200px;
     font-size: 12px;
     margin-top: 110px;
+  }
+
+  #pageNosOffres{
+    margin-top: 100px;
+  }
+
+  #aPropos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px auto;
+    text-align: center;
+  }
+
+  #containerAPropos{
+    width: 500px;
+    font-size: 20px;
+    margin-left: 0;
+    margin-bottom: 100px;
+  }
+
+  #titreAPropos{
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  #paragrapheAPropos{
+    margin-top: 20px;
+  }
+
+  #carte{
+    width: 100%;
+    margin-right: 250px;
+    margin-left: 0;
+  }
+
+  #paragrapheNosOffres{
+    width: 100%;
   }
 }
 
