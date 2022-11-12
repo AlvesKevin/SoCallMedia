@@ -462,16 +462,18 @@ footer{
     margin: 0 auto;
   }
 
-  #numero{
-    display: none;
-  }
-
   #containerTexteAccueil{
     margin: 0 auto;
   }
 
   #containerForm{
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 1078px){
+  #numero{
+    display: none;
   }
 }
 
